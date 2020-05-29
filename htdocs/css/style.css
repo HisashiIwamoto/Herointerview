@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  padding: 0 50px;
 }
 header {
   height: 100px;
@@ -154,21 +153,91 @@ i {
   color: #ffc0cb;
 }
 .section3 {
+  margin-top: 50px;
   height: 500px;
+  padding: 0 20px;
 }
 .section3 .section3-subtitle span {
   padding-left: 60px;
 }
 .section3 .section3-content {
   display: flex;
+  flex-wrap: wrap;
 }
-.section3 .section3-content .pick-box img {
-  width: 80px;
-  height: 60px;
+.section3 .section3-content .pick-box {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 15px;
+  box-shadow: 2px 2px 4px #808080;
+  width: 374px;
+  height: 120px;
+  align-items: center;
+}
+.section3 .section3-content .pick-box .img {
+  width: 120px;
+  height: 120px;
   outline: 1px solid;
+  background-color: #000;
+}
+.section3 .section3-content .pick-box p {
+  width: 200;
+  margin-left: 15px;
+}
+.section3 .section3-btn {
+  width: 324px;
+  height: 60px;
+  margin-left: 0;
+}
+.section4 {
+  height: 1200px;
+}
+.section4 .cliant-logo {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section4 .cliant-logo img {
+  width: 160px;
+  height: 80px;
+  outline: 1px solid;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+aside {
+  margin-top: 50px;
+  display: flex;
+  height: 200px;
+}
+aside .aside-subtitle {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+aside .aside-subtitle h2 {
+  margin: 0;
+}
+aside .conpany-detile {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-size: 10px;
+}
+aside .conpany-detile h2 {
+  margin: 0;
+}
+aside .aside-icon {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+aside .aside-icon i {
+  display: flex;
+  margin: 0;
+}
+aside .aside-icon i p {
+  font-size: 12px;
 }
 footer {
-  height: 150px;
+  height: 100px;
   display: flex;
   background-color: #808080;
   text-align: center;
