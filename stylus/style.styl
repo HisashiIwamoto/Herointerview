@@ -52,8 +52,12 @@ header
     flex: 1
     h2 
         height 200px 
-        font-size: 36px   
-        letter-spacing: 30px
+        font-size: 24px   
+        letter-spacing: 24px
+        line-height: 70px
+        font-style: none
+        span  
+            text-align: right 
     p  
         text-align: center
     .section1-btn   
@@ -90,30 +94,58 @@ header
 
 .news-menu
     display: flex
-    height 200px
-    .section2-btn  
-         writing-mode vertical-rl
-         margin: 0
+    height 250px
+    .section2-btn
+        width: 50px  
+        font-size: 24px
+        writing-mode vertical-rl
+        align-items: center
+        justify-content: center
+        margin: 0
+    ul 
+        margin-top: 0
+        height 250px
     li  
         list-style: none
+        font-size: 18px
         border-bottom: 2px solid
+        padding: 10px
+
 .section2-content-box
     display: flex
     flex-direction: column
     flex: 2
 .mews-box
     display: flex
-    flex-direction: column
+    flex-direction: row
     margin: 0
+.topic 
+    height 80px
+    margin-top: 20px
+    display: flex
     .section2-img
-        width: 30px
-        height 30px
-    .topic 
-        h3,p    
-            margin: 0
+        width: 120px
+        height 80px
+        outline: 1px solid 
+        display: flex
+    h3, p, i   
+        margin: 0
+        margin-left: 10px
+    i 
+        color: pink
 
-
-
+.section3
+    height 500px
+    .section3-subtitle
+        span 
+            padding-left 60px
+    .section3-content
+        display flex 
+        .pick-box
+            img  
+                width: 80px
+                height 60px
+                outline: 1px solid 
 
 footer 
     height 150px
