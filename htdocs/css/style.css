@@ -27,7 +27,7 @@ i {
 }
 .menu-bar nav a {
   padding-left: 20px;
-  color: none;
+  text-decoration: none;
 }
 .menu-img img {
   width: 100%;
@@ -59,14 +59,15 @@ i {
   height: 399px;
 }
 .section-left h2 {
-  height: 200px;
+  font-size: 24px;
+  letter-spacing: 24px;
+  font-size: 32px;
+}
+.section-left .left.rigth {
   font-size: 24px;
   letter-spacing: 24px;
   line-height: 2;
   font-size: 32px;
-}
-.section-left h2 .left {
-  text-align: left;
 }
 .section-left p {
   text-align: center;
@@ -103,14 +104,13 @@ i {
   align-items: center;
   flex-direction: column;
 }
-.section2-title h1 {
+.section2-title p {
   display: flex;
   align-items: center;
   margin: 0;
-  font-size: 10px;
   font-family: nomal;
 }
-.section2-title h1:before {
+.section2-title p:before {
   width: 7em;
   border-top: 2px solid;
   content: "";
@@ -128,6 +128,7 @@ i {
 }
 .news-menu {
   display: flex;
+  height: 320px;
 }
 .news-menu .section2-btn {
   height: 273px;
@@ -146,7 +147,7 @@ i {
 }
 .news-menu li {
   list-style: none;
-  width: 100%;
+  width: 300px;
   font-size: 18px;
   border-bottom: 1px solid #888;
   padding: 10px;
@@ -164,6 +165,7 @@ i {
   flex-direction: column;
   background-color: #eee;
   padding: 10px;
+  margin-left: 15px;
 }
 .mews-box {
   display: flex;
@@ -209,7 +211,7 @@ i {
 }
 .section3 .section3-content .pick-box {
   display: flex;
-  margin-top: 10px;
+  margin-top: 30px;
   margin-left: 15px;
   box-shadow: 2px 2px 4px #808080;
   width: 374px;
@@ -233,6 +235,7 @@ i {
   margin-left: 0;
 }
 .section4 {
+  margin-top: 100px;
   height: 1200px;
 }
 .section4 .cliant-logo {
@@ -257,7 +260,7 @@ aside .conpany-detile {
   flex-direction: column;
   font-size: 10px;
 }
-aside .conpany-detile h2 {
+aside .conpany-detile p {
   margin: 0;
 }
 aside .aside-icon {
@@ -268,11 +271,15 @@ aside .aside-icon {
 aside .aside-icon i {
   display: flex;
   margin: 0;
+  color: #ffc0cb;
 }
 aside .aside-icon i p {
-  font-size: 12px;
+  margin-left: 20px;
+  color: #000;
+  font-size: 15px;
 }
 footer {
+  color: #fff;
   height: 100px;
   display: flex;
   background-color: #808080;

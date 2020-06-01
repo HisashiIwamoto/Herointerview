@@ -1,0 +1,21 @@
+{
+  "name": "herointerview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pug": "pug pug --out htdocs --watch --pretty",
+    "stylus":"stylus stylus --out htdocs/css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HisashiIwamoto/Herointerview.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HisashiIwamoto/Herointerview/issues"
+  },
+  "homepage": "https://github.com/HisashiIwamoto/Herointerview#readme"
+}

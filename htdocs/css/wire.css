@@ -1,0 +1,55 @@
+header {
+  height: 100px;
+  margin: auto 0;
+}
+header .header-icon {
+  margin: auto 0;
+  display: flex;
+}
+header .header-icon p {
+  text-align: center;
+  flex: 3;
+}
+header .rigth-icon,
+header i {
+  margin: auto 10px;
+  align-items: center;
+}
+header .menu-bar nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .menu-bar nav a {
+  padding-left: 20px;
+  text-decoration: none;
+}
+. .title,
+main .title {
+  text-align: center;
+  font-size: 20px;
+}
+footer {
+  color: #fff;
+  height: 100px;
+  display: flex;
+  background-color: #808080;
+  text-align: center;
+  align-items: center;
+}
+footer p {
+  flex: 1;
+}
+footer .footer-icon {
+  flex: 1;
+}
+footer nav {
+  flex: 3;
+}
+footer ul {
+  display: flex;
+}
+footer li {
+  list-style: none;
+  flex: 1;
+}
