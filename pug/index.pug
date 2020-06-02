@@ -6,6 +6,7 @@ html(lang="ja")
         title Herointerview
         link(rel="stylesheet", href="css/style.css")
         link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.6.1/css/all.css")
+        meta(name="viewport" content="width=device-width,initial-scale=1.0")
     body
         header
             .header-icon
@@ -25,8 +26,13 @@ html(lang="ja")
                         a(href="#", title="title") 問い合わせ
 
             //- img(src="#", alt="")
-            .menu-img 
-                img(src="img/sample.png", alt="")        
+            .menu-img
+                .menu-img-side 
+                    img( id side1 src="img/sideimg1.jpg", alt="")  
+                .section1-sideimg
+                    img(src="img/sideimg2.jpg", alt="")
+                    img(src="img/sideimg3.jpg", alt="")
+                    img(src="img/sideimg4.jpg", alt="")      
             //- who we are
             .section1
                 .section-title WHO WE ARE

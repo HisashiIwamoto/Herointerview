@@ -2,6 +2,7 @@ body {
   margin: 0;
   width: 1280px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 header {
   height: 100px;
@@ -29,10 +30,21 @@ i {
   padding-left: 20px;
   text-decoration: none;
 }
-.menu-img img {
-  width: 100%;
-  height: 500px;
+.menu-img {
+  display: flex;
+}
+.menu-img .menu-img-side img {
+  height: 489px;
   outline: 1px solid;
+  width: 920px;
+}
+.menu-img .section1-sideimg {
+  display: flex;
+  height: 489px;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-color: #639 #008000;
+  scrollbar-width: thin;
 }
 .section1 {
   margin-top: 20px;
@@ -301,4 +313,34 @@ footer ul {
 footer li {
   list-style: none;
   flex: 1;
+}
+@media screen and (max-width: 380px) {
+  body {
+    overflow: hidden;
+    margin: 0;
+  }
+  header {
+    height: 71px;
+  }
+  .rigth-icon {
+    display: none;
+  }
+  .menu-bar {
+    display: none;
+  }
+  .menu-img,
+  .section-left {
+    margin: 0 auto;
+  }
+  .section1-content {
+    display: flex;
+    flex-direction: column;
+  }
+  img {
+    width: 100%;
+  }
+  aside {
+    display: block;
+    margin: 0 auto;
+  }
 }
