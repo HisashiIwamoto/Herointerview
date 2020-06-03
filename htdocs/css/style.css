@@ -32,6 +32,7 @@ i {
 }
 .menu-img {
   display: flex;
+  width: 1280px;
 }
 .menu-img .menu-img-side img {
   height: 489px;
@@ -41,6 +42,7 @@ i {
 .menu-img .section1-sideimg {
   display: flex;
   height: 489px;
+  width: 360px;
   flex-direction: column;
   overflow-y: scroll;
   scrollbar-color: #639 #008000;
@@ -58,7 +60,7 @@ i {
 .section-title:before {
   width: 7em;
   border-top: 2px solid;
-  content: "";
+  content: '';
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -125,7 +127,7 @@ i {
 .section2-title p:before {
   width: 7em;
   border-top: 2px solid;
-  content: "";
+  content: '';
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -253,6 +255,17 @@ i {
 .section4 .cliant-logo {
   height: 900px;
 }
+.section4 .cliant-logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+.section4 .cliant-logo img {
+  width: 200px;
+  height: 60px;
+  margin-right: 48px;
+  margin-top: 10px;
+}
 aside {
   margin-top: 50px;
   display: flex;
@@ -318,6 +331,7 @@ footer li {
   body {
     overflow: hidden;
     margin: 0;
+    width: 380px;
   }
   header {
     height: 71px;
@@ -331,6 +345,16 @@ footer li {
   .menu-img,
   .section-left {
     margin: 0 auto;
+  }
+  .menu-img .menu-img-side img {
+    width: 375px;
+    height: 375px;
+  }
+  .menu-img .section1-sideimg {
+    display: none;
+  }
+  .menu-img .section1-sideimg img {
+    display: none;
   }
   .section1-content {
     display: flex;
