@@ -1,6 +1,4 @@
 body {
-    margin: 0;
-    width: 1280px;
     margin: 0 auto;
     overflow-x: hidden;
 }
@@ -42,7 +40,8 @@ header {
 
 .menu-img {
     display: flex;
-    width: 1280px;
+    margin: 0 auto;
+    justify-content: center;
 
     .menu-img-side {
         img {
@@ -67,6 +66,7 @@ header {
     margin-top: 20px;
     height: 560px;
     padding: 50px;
+    margin: 0 auto;
 }
 
 .section-title {
@@ -84,6 +84,7 @@ header {
 
 .section1-content {
     display: flex;
+    margin: 0 auto;
 }
 
 .section-left {
@@ -142,37 +143,38 @@ header {
 
 .section2 {
     height: 460px;
-}
 
-.section2-title {
-    align-items: center;
-    flex-direction: column;
-
-    p {
+    .section2-content {
         display: flex;
-        align-items: center;
-        margin: 0;
-        font-family: nomal;
+        justify-content: center;
+    }
 
-        &:before {
-            width: 7em;
-            border-top: 2px solid;
-            content: '';
-            margin-left: 10px;
-            margin-right: 10px;
+    .section2-title {
+        align-items: center;
+        flex-direction: column;
+
+        p {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            font-family: nomal;
+
+            &:before {
+                width: 7em;
+                border-top: 2px solid;
+                content: '';
+                margin-left: 10px;
+                margin-right: 10px;
+            }
         }
     }
-}
 
-.section2-content {
-    display: flex;
-}
-
-.section2-subtitle {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    flex: 1;
+    .section2-subtitle {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        flex: 1;
+    }
 }
 
 .news-menu {
@@ -260,48 +262,52 @@ header {
 
 .section3 {
     margin-top: 100px;
-    height: 500px;
     padding: 0 20px;
+    display: flex
+    justify-content: center
 
-    .section3-subtitle {
-        span {
-            padding-left: 60px;
+    .section3-content{
+        justify-content: center
+        .section3-subtitle {
+            span {
+                padding-left: 60px;
+            }
         }
-    }
 
-    .section3-content {
-        display: flex;
-        flex-wrap: wrap;
-
-        .pick-box {
+        .section3-content-box {
             display: flex;
-            margin-top: 30px;
-            margin-left: 15px;
-            box-shadow: 2px 2px 4px gray;
-            width: 374px;
-            height: 120px;
-            align-items: center;
-
-            img {
-                width: 120px;
-                height: 120px;
-            }
-
-            p {
-                width: 200;
+            flex-wrap: wrap;
+            
+            .pick-box {
+                display: flex;
+                margin-top: 30px;
                 margin-left: 15px;
+                box-shadow: 2px 2px 4px gray;
+                width: 374px;
+                height: 120px;
+                align-items: center;
+
+                img {
+                    width: 120px;
+                    height: 120px;
+                }
+
+                p {
+                    width: 200;
+                    margin-left: 15px;
+                }
+            }
+
+            .logo {
+                box-shadow: 5px 5px 0px 0 rgb(255, 0, 255);
             }
         }
 
-        .logo {
-            box-shadow: 5px 5px 0px 0 rgb(255, 0, 255);
+        .section3-btn {
+            width: 324px;
+            height: 60px;
+            margin-left: 0;
         }
-    }
-
-    .section3-btn {
-        width: 324px;
-        height: 60px;
-        margin-left: 0;
     }
 }
 
@@ -402,11 +408,10 @@ footer {
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 800px) {
     body {
-        overflow: hidden;
+        overflow-x: hidden;
         margin: 0;
-        width: 380px
     }
 
     header {
@@ -428,8 +433,7 @@ footer {
     .menu-img {
         .menu-img-side {
             img {
-                width: 375px;
-                height: 375px;
+                width: 100%;
             }
         }
 
@@ -454,5 +458,9 @@ footer {
     aside {
         display: block;
         margin: 0 auto;
+    }
+
+    footer {
+        display: block;
     }
 }

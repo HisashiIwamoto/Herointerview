@@ -1,6 +1,4 @@
 body {
-  margin: 0;
-  width: 1280px;
   margin: 0 auto;
   overflow-x: hidden;
 }
@@ -32,7 +30,8 @@ i {
 }
 .menu-img {
   display: flex;
-  width: 1280px;
+  margin: 0 auto;
+  justify-content: center;
 }
 .menu-img .menu-img-side img {
   height: 489px;
@@ -52,6 +51,7 @@ i {
   margin-top: 20px;
   height: 560px;
   padding: 50px;
+  margin: 0 auto;
 }
 .section-title {
   display: flex;
@@ -66,6 +66,7 @@ i {
 }
 .section1-content {
   display: flex;
+  margin: 0 auto;
 }
 .section-left {
   text-align: center;
@@ -114,27 +115,28 @@ i {
 .section2 {
   height: 460px;
 }
-.section2-title {
+.section2 .section2-content {
+  display: flex;
+  justify-content: center;
+}
+.section2 .section2-title {
   align-items: center;
   flex-direction: column;
 }
-.section2-title p {
+.section2 .section2-title p {
   display: flex;
   align-items: center;
   margin: 0;
   font-family: nomal;
 }
-.section2-title p:before {
+.section2 .section2-title p:before {
   width: 7em;
   border-top: 2px solid;
   content: '';
   margin-left: 10px;
   margin-right: 10px;
 }
-.section2-content {
-  display: flex;
-}
-.section2-subtitle {
+.section2 .section2-subtitle {
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -213,17 +215,21 @@ i {
 }
 .section3 {
   margin-top: 100px;
-  height: 500px;
   padding: 0 20px;
-}
-.section3 .section3-subtitle span {
-  padding-left: 60px;
+  display: flex;
+  justify-content: center;
 }
 .section3 .section3-content {
+  justify-content: center;
+}
+.section3 .section3-content .section3-subtitle span {
+  padding-left: 60px;
+}
+.section3 .section3-content .section3-content-box {
   display: flex;
   flex-wrap: wrap;
 }
-.section3 .section3-content .pick-box {
+.section3 .section3-content .section3-content-box .pick-box {
   display: flex;
   margin-top: 30px;
   margin-left: 15px;
@@ -232,18 +238,18 @@ i {
   height: 120px;
   align-items: center;
 }
-.section3 .section3-content .pick-box img {
+.section3 .section3-content .section3-content-box .pick-box img {
   width: 120px;
   height: 120px;
 }
-.section3 .section3-content .pick-box p {
+.section3 .section3-content .section3-content-box .pick-box p {
   width: 200;
   margin-left: 15px;
 }
-.section3 .section3-content .logo {
+.section3 .section3-content .section3-content-box .logo {
   box-shadow: 5px 5px 0px 0 #f0f;
 }
-.section3 .section3-btn {
+.section3 .section3-content .section3-btn {
   width: 324px;
   height: 60px;
   margin-left: 0;
@@ -327,11 +333,10 @@ footer li {
   list-style: none;
   flex: 1;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 800px) {
   body {
-    overflow: hidden;
+    overflow-x: hidden;
     margin: 0;
-    width: 380px;
   }
   header {
     height: 71px;
@@ -347,8 +352,7 @@ footer li {
     margin: 0 auto;
   }
   .menu-img .menu-img-side img {
-    width: 375px;
-    height: 375px;
+    width: 100%;
   }
   .menu-img .section1-sideimg {
     display: none;
@@ -366,5 +370,8 @@ footer li {
   aside {
     display: block;
     margin: 0 auto;
+  }
+  footer {
+    display: block;
   }
 }

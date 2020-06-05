@@ -10,9 +10,10 @@ html(lang="ja")
     body
         header
             .header-icon
-                i.fas.fa-bars.fa-2x
+                .header-left-icon
+                    i.fas.fa-bars.fa-2x
                 p Herointerview
-                .rigth-icon
+                .header-rigth-icon
                     i.fab.fa-twitter.fa-2x
                     i.fab.fa-facebook-f.fa-2x
                     i.fab.fa-youtube.fa-2x
@@ -27,9 +28,9 @@ html(lang="ja")
 
             //- img(src="#" alt="")
             .menu-img
-                .menu-img-side 
+                .menu-img-left 
                     img( id side1 src="img/sideimg1.jpg" alt="")  
-                .section1-sideimg
+                .menu-img-right
                     img(src="img/sideimg2.jpg" alt="")
                     img(src="img/sideimg3.jpg" alt="")
                     img(src="img/sideimg4.jpg" alt="")      
@@ -38,18 +39,18 @@ html(lang="ja")
             //- who we are
             .section1
                 .section-title WHO WE ARE
-                .section1-content
-                    .section-left
-                        h2 頑張る若者
-                        h2.left 皆んなが<span>-</span>
-                        h2.rigth <span>-</span>ヒーロー
-                        p Be in the spotligth
-                        .btn.section1-btn
-                            p ヒーローインタビューとは
+                    .section1-content
+                        .section-left
+                            h2 頑張る若者
+                            h2.left 皆んなが<span>-</span>
+                            h2.rigth <span>-</span>ヒーロー
+                            p Be in the spotligth
+                            .btn.section1-btn
+                                p ヒーローインタビューとは
 
                     //- img(src="#" alt="")
-                    .section1-img
-                        img(src="img/sample1.png" alt="")
+                .section1-img
+                    img(src="img/sample1.png" alt="")
 
             //- news
             .section2
@@ -121,32 +122,33 @@ html(lang="ja")
 
             //- pick up
             .section3
-                .section-title PICK UP TEAME
-                .section3-subtitle
-                    h2 The powaer of 
-                        span Teamwork .py team
                 .section3-content
-                    .pick-box
-                        img(src="img/section3-img.jpg" alt="")
-                        p 記事タイトルが入ります
-                    .pick-box
-                        img(src="img/section3-img.jpg" alt="")
-                        p 記事タイトルが入ります
-                    .pick-box
-                        img(src="img/section3-img.jpg" alt="")
-                        p 記事タイトルが入ります
-                    .pick-box
-                        img(src="img/section3-img.jpg" alt="")
-                        p 記事タイトルが入ります
-                    .pick-box
-                        img(src="img/section3-img.jpg" alt="")
-                        p 記事タイトルが入ります
-                    .pick-box.logo
-                        img(src="img/logo.png" alt="")
-                        p 記事タイトルが入ります
+                    .section-title PICK UP TEAME
+                    .section3-subtitle
+                        h2 The powaer of 
+                            span Teamwork .py team
+                    .section3-content-box
+                        .pick-box
+                            img(src="img/section3-img.jpg" alt="")
+                            p 記事タイトルが入ります
+                        .pick-box
+                            img(src="img/section3-img.jpg" alt="")
+                            p 記事タイトルが入ります
+                        .pick-box
+                            img(src="img/section3-img.jpg" alt="")
+                            p 記事タイトルが入ります
+                        .pick-box
+                            img(src="img/section3-img.jpg" alt="")
+                            p 記事タイトルが入ります
+                        .pick-box
+                            img(src="img/section3-img.jpg" alt="")
+                            p 記事タイトルが入ります
+                        .pick-box.logo
+                            img(src="img/logo.png" alt="")
+                            p 記事タイトルが入ります
 
-                .btn.section3-btn
-                    p チームをもっと見る
+                    .btn.section3-btn
+                        p チームをもっと見る
 
             //- cliant
             .section4

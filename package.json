@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "pug": "pug pug --out htdocs --watch --pretty",
-    "stylus":"stylus stylus --out htdocs/css --watch"
+    "stylus": "stylus stylus --out htdocs/css --watch",
+    "php": "php -S localhost:8888 -t htdocs"
   },
   "repository": {
     "type": "git",
