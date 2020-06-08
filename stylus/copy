@@ -1,42 +1,80 @@
 
-
-position-center(x = none){
-    display: flex
-    justify-content: x
+position-center(x = none) {
+    display: flex;
+    justify-content: x;
 }
 
-body 
-    margin: 0
+section-title() {
+    display: flex;
+    align-items: center;
 
-header 
-    height 
-    .header-icon
-        display: flex
-        justify-content: space-between
-        .header-left-icon,.header-rigth-icon
-            display: flex
-            align-items: center
-main  
-    .menu-bar
-        position-center(center)
-        
-    .menu-img
-        display: flex
-        height 489px
-        
-        .menu-img-left
-            width: auto
-            flex: 2
-            img 
-                height 489px
-                width: 100%
-        .menu-img-right
-            flex: 1
-            width: auto
-            display: flex
-            flex-direction: column
-            overflow-y: scroll
-    
-    .section1
-       position-center(center)
-                
+    &:before {
+        width: 7em;
+        border-top: 2px solid;
+        content: '';
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    height;
+
+    .header-icon {
+        display: flex;
+        justify-content: space-between;
+
+        .header-left-icon, .header-rigth-icon {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+main {
+    .menu-bar {
+        position-center(center);
+    }
+
+    .menu-img {
+        display: flex;
+        height: 489px;
+
+        .menu-img-left {
+            width: auto;
+            flex: 2;
+
+            img {
+                height: 489px;
+                width: 100%;
+            }
+        }
+
+        .menu-img-right {
+            flex: 1;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            overflow-y: scroll;
+        }
+    }
+
+    .section1 {
+        position-center(center);
+        margin-top: 80px;
+        display: flex;
+
+        .section1-title {
+            section-title();
+        }
+
+        .section1-content {
+            display: flex;
+
+        }
+    }
+}
